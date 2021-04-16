@@ -5,6 +5,12 @@ body {
 
 /* Typography */
 
+@font-face {
+  font-family: "Raleway";
+  src: url(fonts/Raleway-VariableFont_wght.ttf);
+  font-display: swap;
+}
+
 h1,
 h2,
 h3,
@@ -12,7 +18,7 @@ h4,
 h5,
 h6 {
   text-align: left;
-  font-family: "Raleway";
+  font-family: "Raleway", Helvetica, sans-serif;
 }
 h1 {
   font-size: 52px;
