@@ -1,7 +1,14 @@
-/* Typography */
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  background-color: antiquewhite;
+  padding: 0px;
+  margin: 0px;
 }
+
+/* Typography */
 
 h1,
 h2,
@@ -9,6 +16,58 @@ h3,
 h4,
 h5,
 h6 {
+  text-align: left;
+  font-family: "Raleway";
+}
+h1 {
+  font-size: 52px;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+header {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  margin-left: 20px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/saar3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero h1,
+.hero h2,
+.hero h3 {
   text-align: center;
-  font-family: "Roboto";
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 20px 0;
+}
+
+.hero h2 {
+  font-size: 30px;
+}
+
+.hero h3 {
+  font-size: 18px;
 }
