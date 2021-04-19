@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -16,8 +20,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  text-align: left;
+h6,
+p,
+a {
   font-family: "Raleway", Helvetica, sans-serif;
 }
 h1 {
@@ -72,10 +77,34 @@ nav ul {
   font-size: 18px;
 }
 
+.hero__buttons {
+  margin: 20px 0px;
+}
+
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 44px !important;
   }
 }
 /* A comment about some upcoming styles */
-/* Another comment */
+
+/****** Utility Classes *******/
+
+.btn {
+  background-color: #fcab5f;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 10px;
+}
+#info_btn {
+  background-color: #2cb9dd;
+}
+.btn:hover {
+  background-color: #fb8b24;
+}
+#info_btn:hover {
+  background-color: #1d92af;
+}
