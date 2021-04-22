@@ -78,11 +78,11 @@ section {
 
 .info h2 {
   margin-bottom: 50px;
+  font-size: 1.7em;
 }
 .info h3 {
   margin: 0;
 }
-
 .card_container {
   display: flex;
   flex-direction: row;
@@ -100,6 +100,11 @@ section {
 }
 .card h3 {
   padding: 10px;
+  font-size: 1.4em;
+}
+.card h4 {
+  margin: 20px 0px 0px;
+  font-size: 1.2em;
 }
 .card img {
   object-fit: cover;
