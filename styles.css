@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   padding: 0px;
@@ -82,8 +85,12 @@ section {
   align-items: center;
 }
 
-/****** Utility Classes *******/
+/****** RSVP Section *******/
+.rsvp {
+  background-color: #fcab5f;
+}
 
+/****** Utility Classes *******/
 .btn {
   background-color: #fcab5f;
   color: #ffffff;
@@ -101,6 +108,16 @@ section {
 }
 #info_btn:hover {
   background-color: #1d92af;
+}
+.back-top-btn {
+  padding: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  box-shadow: 5px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 /****** Mobile Styles *******/
