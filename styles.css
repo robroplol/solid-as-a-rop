@@ -25,7 +25,8 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+label {
   font-family: "Raleway", Helvetica, sans-serif;
 }
 h1 {
@@ -119,8 +120,20 @@ section {
 /****** RSVP Section *******/
 .rsvp {
   background-color: #fcab5f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
 }
-
+form.rsvp {
+  display: block;
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Raleway", Helvetica, sans-serif;
+}
 /****** Utility Classes *******/
 .btn {
   background-color: #fcab5f;
