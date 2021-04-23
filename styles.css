@@ -75,12 +75,15 @@ section {
   align-items: center;
   padding: 10px;
   text-align: center;
-  background-color: #ededed;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/saar2.jpg);
+  background-position: center center;
 }
 
 .info h2 {
   margin-bottom: 50px;
-  font-size: 1.7em;
+  font-size: 2em;
+  color: #ffffff;
 }
 .info h3 {
   margin: 0;
@@ -98,7 +101,8 @@ section {
   margin: 0 50px;
   text-align: center;
   border-radius: 5px;
-  box-shadow: 2px 2px 15px #dcdcdc;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
 }
 .card h3 {
   padding: 10px;
@@ -128,6 +132,7 @@ section {
   padding: 10px;
   text-align: left;
 }
+
 form.rsvp {
   display: block;
 }
