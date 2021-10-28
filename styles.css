@@ -78,9 +78,9 @@ section {
   background: repeating-linear-gradient(
     45deg,
     #002642,
-    #002642 100px,
-    #8f0037 100px,
-    #8f0037 200px
+    #002642 200px,
+    #8f0037 200px,
+    #8f0037 400px
   );
   background-position: center center;
 }
@@ -129,7 +129,13 @@ section {
 }
 /****** RSVP Section *******/
 .rsvp {
-  background-color: #a3003f;
+  background: repeating-linear-gradient(
+    135deg,
+    #cc8500,
+    #cc8500 100px,
+    #002642 100px,
+    #002642 200px
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,6 +146,8 @@ section {
 
 form.rsvp {
   display: block;
+  background: #efefef;
+  padding: 30px 15px;
 }
 input::placeholder {
   color: rgba(0, 0, 0, 0.6);
