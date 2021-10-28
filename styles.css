@@ -48,7 +48,7 @@ section {
   justify-content: center;
   align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/saar1.jpg);
+    url(images/saar3.jpg);
   background-size: cover;
   background-position: top center;
   /*display: none;*/
@@ -75,8 +75,13 @@ section {
   align-items: center;
   padding: 10px;
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/saar2.jpg);
+  background: repeating-linear-gradient(
+    45deg,
+    #002642,
+    #002642 100px,
+    #8f0037 100px,
+    #8f0037 200px
+  );
   background-position: center center;
 }
 
@@ -124,7 +129,7 @@ section {
 }
 /****** RSVP Section *******/
 .rsvp {
-  background-color: #fcab5f;
+  background-color: #a3003f;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,7 +147,7 @@ input::placeholder {
 }
 /****** Utility Classes *******/
 .btn {
-  background-color: #fcab5f;
+  background-color: #a3003f;
   color: #ffffff;
   text-transform: uppercase;
   padding: 20px 30px;
@@ -151,23 +156,30 @@ input::placeholder {
   border-radius: 10px;
 }
 #info_btn {
-  background-color: #2cb9dd;
+  background-color: #e59500;
 }
 .btn:hover {
-  background-color: #fb8b24;
+  background-color: #840032;
 }
 #info_btn:hover {
-  background-color: #1d92af;
+  background-color: #cc8500;
 }
 .back-top-btn {
   padding: 20px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #e5dada;
   border: 1px solid #ececec;
   box-shadow: 5px;
   position: fixed;
   bottom: 10px;
   right: 10px;
+  color: #02040f;
+  text-decoration: none;
+}
+
+.back-top-btn:hover {
+  background-color: #002642;
+  color: #e5dada;
 }
 
 /****** Mobile Styles *******/
